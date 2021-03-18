@@ -1,0 +1,48 @@
+.face-detector {
+  //background-color: rgba(#444, 0.7);
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+
+  .image-box {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #999;
+    //width: 600px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .face-boundary {
+      position: absolute;
+      //box-shadow: 0 0 0 2px #149df2 inset;
+      border: solid 2px #149df2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 200ms;
+
+      &:hover {
+        border-color: rgb(37, 240, 47);
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .face-detector {
+    width: 95%;
+  }
+}
+
+@media (max-width: 700px) {
+  .face-detector {
+    .image-box {
+      width: 95%;
+    }
+  }
+}

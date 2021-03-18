@@ -1,0 +1,21 @@
+@import '../../partialStyles/colorVariables';
+
+.alert {
+  color: $dark1;
+  height: 41px;
+  width: 100%;
+  margin-bottom: 12px;
+  text-align: center;
+  line-height: 39px;
+  border: solid 2px #000;
+
+  &.error {
+    border-color: $cancel1;
+    background-color: rgba($cancel2, 0.3);
+  }
+
+  &.success {
+    border-color: $success1;
+    background-color: rgba($success2, 0.3);
+  }
+}
